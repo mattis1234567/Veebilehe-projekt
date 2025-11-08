@@ -1,51 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Crossy Road Game Clone</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div id="counter">0</div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="src/styles.css">
+		<link rel="stylesheet" href="src/mäng2_style.css">
+		<title>Mäng2</title>
+	</head>
+	<body>
+		<header>
+		<div class="lehe_nav">
+			<button class="tagasi_nupp" href="index.html">tagasi</button>
+		</div>
+		<div class="lehe_pealkiri">
+			<p>MÄNG2</p>
+		</div>
+		<div class="lehe_kirjeldus">
+			<p>proovi õllekappa soovitud kogus õlu valada (hoveri kraani kohal), uuesti alustamiseks joo kapp tühjaks (kliki kapal)</p>
+		</div>
+		</header>
+		<div class="mäng">			
+			<h1>Fill the mug <span id="target">0</span>%</h1>
+			<h2 id="percent-filled"></h2>
+			<h3 id="result"></h3>
+			
+			<div id="tap-container">
+				<div id="tap"></div>
+				<div id="handle"></div>
+				<div id="pour"></div>
+			</div>
+			
+			<div id="mug-container">
+				<div id="mug">
+				<div id="beer"></div>
+			</div>
+		</div>
+		
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+		<script src="src/mäng2.js"></script>
+	</body>
 
-<div id="controlls">
-  <div>
-    <button id="forward">
-      <svg width="30" height="30" viewBox="0 0 10 10">
-        <g transform="rotate(0, 5,5)">
-          <path d="M5,4 L7,6 L3,6 L5,4" />
-        </g>
-      </svg>
-    </button>
-    <button id="left">
-      <svg width="30" height="30" viewBox="0 0 10 10">
-        <g transform="rotate(-90, 5,5)">
-          <path d="M5,4 L7,6 L3,6 L5,4" />
-        </g>
-      </svg>
-    </button>
-    <button id="backward">
-      <svg width="30" height="30" viewBox="0 0 10 10">
-        <g transform="rotate(180, 5,5)">
-          <path d="M5,4 L7,6 L3,6 L5,4" />
-        </g>
-      </svg>
-    </button>
-    <button id="right">
-      <svg width="30" height="30" viewBox="0 0 10 10">
-        <g transform="rotate(90, 5,5)">
-          <path d="M5,4 L7,6 L3,6 L5,4" />
-        </g>
-      </svg>
-    </button>
-  </div>
-</div>
-
-<div id="end">
-  <button id="retry">Retry</button>
-</div>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/99/three.min.js'></script>
-    <script src="mäng2.js"></script>
-  </body>
 </html>

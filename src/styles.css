@@ -1,0 +1,38 @@
+html {
+	font-size:16px;
+}
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	margin: 0;
+}
+h1,h2,h3,h4 {
+	font-family: 'Germania One', Arial,sans-serif;
+}
+
+header {
+	background-color: blue;
+	display: flex;
+	height: 120px;
+}
+.lehe_nav {
+	width: 10%;
+}
+.tagasi_nupp {
+	font-size: 1em;
+	margin: 1em;
+	padding: 1em;
+	width: 5em;
+	height: 5em;
+	border-radius: 50%;
+}
+.lehe_pealkiri {
+	text-align: justify;
+	color: black;
+	font-size: 2em;
+	width: 20%;
+}
+.lehe_kirjeldus {
+	text-align: left;
+	color: white;
+	width: 70%;
+}
