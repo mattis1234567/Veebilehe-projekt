@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <html>
+
   <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="src/style.css">
-    <title>Lehe päis</title>
+	  <meta charset="UTF-8" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="src/mäng1_style.css">
+    <title class="title">Mäng 2</title>
   </head>
+
   <body>
+    <header>
+    <div class="lehe_nav">
+      <button class="tagasi_nupp" href="index.html">Tagasi</button>
+    </div>
+
+    <div class="lehe_pealkiri">
+      <h1>Mäng 1</h1>
+    </div>
+    </header>
+
+    <div class="lehe_kirjeldus">
+      <p>Kasuta nooleklahve, et liikuda üles/alla ja paremale/vasakule ning kasvata ussi, et suurendada skoori.</p>
+    </div>
+
+    <div>
+    <h3>Ussimäng</h3>
+      <canvas id="stage" height="400" width="520"></canvas>
+    </div>
+
+    <script src="https://dev.to/gscode/10-best-of-javascript-games-3mjj"></script>
+		<script src="src/mäng1.js"></script>
   </body>
 </html>
