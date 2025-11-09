@@ -27,12 +27,13 @@ header {
 }
 .lehe_pealkiri {
 	text-align: justify;
-	color: black;
+	color: white;
 	font-size: 2em;
 	width: 20%;
 }
 .lehe_kirjeldus {
 	text-align: left;
-	color: white;
+	color: black;
 	width: 70%;
+	padding: 20px;
 }
