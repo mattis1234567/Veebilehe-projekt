@@ -9,7 +9,7 @@ function getHeights(){
 	beerHeight = $('#beer').height();
 	percentFilled = (beerHeight / mugHeight) * 100;
   roundedPercent = Math.round(percentFilled);
-	$('#percent-filled').html('Percent Filled: ' + roundedPercent + '%');
+	$('#percent-filled').html('Õlle kogus: ' + roundedPercent + '%');
 };
 
 $('#handle').hover(
@@ -23,13 +23,12 @@ $('#handle').hover(
     $('#beer').css('animation-play-state', 'paused');
     $('#pour').removeClass('pouring');
     if (roundedPercent === 0) {
-      // do nothing
     } else if (roundedPercent === game) {
-    	$('#result').html('Nailed it! Good job!');
+    	$('#result').html('Edukas sooritus');
     } else if((game - roundedPercent) < 5 && (game - roundedPercent) > -5 ){
-      $('#result').html('Eh. Close enough.');
+      $('#result').html('Käib kahh');
     } else {
-      $('#result').html('You stink');
+      $('#result').html('Ega ikka sitast saia saa');
     }
   }
 );

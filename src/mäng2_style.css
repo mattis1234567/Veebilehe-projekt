@@ -87,7 +87,7 @@
 	transition:0s;
 }
 #pour.pouring {
-	height:230px;
+	height:330px;
 	transition:800ms ease;
 }
 
@@ -97,6 +97,7 @@
 	transform: scale(0.8);
 	position:absolute;
 	top:140px;
+	z-index: 10;
 }
 #mug {
 	margin:60px 0  0 40px;
@@ -157,10 +158,10 @@
   }
 }
 #beer.fill {
-	animation-name:beerFill;
-	animation-duration:10s;
-	animation-fill-mode:forwards;
-	background-position:0% 70%;
+    animation-name: beerFill;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    background-position: 0% 70%;
 }
 h1 {
 	font-size:3rem;
