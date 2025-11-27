@@ -129,8 +129,8 @@ Game.Draw = function(context, snake) {
       snake.stage.direction = keyPress;
     }
     
-    // Joonistab valge tausta
-    context.fillStyle = "white";
+    // Joonistab musta tausta
+    context.fillStyle = "rgba(30, 30, 30)";
     context.fillRect(0, 0, snake.stage.width, snake.stage.height);
     
     // Ussi pea praegused koordinaadid
@@ -186,7 +186,7 @@ Game.Draw = function(context, snake) {
   
   // Lahtri/segmendi joonistamine
   this.drawCell = function(x, y) {
-    context.fillStyle = 'rgb(170, 170, 170)'; // Hall värv
+    context.fillStyle = 'rgb(255, 255, 255)'; // Valge värv
     context.beginPath();
     // Joonistab ringi (ussil on ümarad punktid)
     context.arc((x * snake.stage.conf.cw + 6), (y * snake.stage.conf.cw + 6), 4, 0, 2*Math.PI, false);    
